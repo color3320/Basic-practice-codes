@@ -10,10 +10,11 @@ while num!=0:
 print(sum)
 
 #string extraction
-num = input("Enter Number: ")
-sum = 0
+# num = input("Enter Number: ")
+# sum = 0
 
-for i in num:
-    sum = sum + int(i)
+# for i in num:
+#     sum = sum + int(i)
+#      #print (i)
 
-print(sum)
+# print(sum)

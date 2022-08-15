@@ -1,10 +1,8 @@
-def printDivisors(n) :
-    i = 1
-    while i <= n :
-        if (n % i==0) :
-            print (i,end=" ")
-        i = i + 1
-         
-n= int(input("Enter a number: "))
-print ("The factors of",n, "are: ")
-printDivisors(n)
+num = int(input("Enter a number to find factorial of: "))
+fact = 1
+if num<0:
+    print("Not possible")
+else:
+    for i in range(1, num+1):
+        fact = fact*i
+print("Factorial of the given number is",fact)

@@ -1,23 +1,18 @@
-num1 = int(input("Enter starting number - "))
-num2 = int(input("Enter starting number - "))
-
-primenum= []
-
-for i in range(num1,num2+1):
-    flag = False
-
-    if i<2:
-        continue
-
-    if i == 2:
-        primenum.append(2)
-        continue
-
-    for x in range(2,i):          
-        if (i % x) == 0:
+num = int(input("Enter a number - "))
+flag = False
+if num>1 :
+    for i in range(2, num):
+        if num%i==0:
             flag = True
             break
+elif num == 1:
+    print("Invalid")
+    
+if flag:
+    print(num,"is not a prime number")
+    print(i,"times",num//i,"is",num)
 
-    if flag == False:
-        primenum.append(i)
-print(primenum)
+else:
+    print("Prime")
+    
+    
