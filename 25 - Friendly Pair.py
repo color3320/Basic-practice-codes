@@ -1,0 +1,2 @@
+def sumoffactors(n):
+    pass
